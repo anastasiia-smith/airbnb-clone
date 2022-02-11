@@ -1,9 +1,9 @@
-import logo from './images/airbnb-logo.svg'
+import logo from './images/logo.svg'
 
 export default function Header() {
   return(
-    <header>
-      <img scr={logo} alt="Airbnb logo" />
+    <header className="header">
+      <img className="header__img" src={logo} alt="Airbnb logo" />
     </header>
   )
 }
