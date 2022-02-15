@@ -45,7 +45,7 @@ body {
 }
 
 .cards {
-  padding: 30px 36px;
+  margin: 30px 36px;
   overflow-x: scroll;
   display: flex;
 }
@@ -53,8 +53,11 @@ body {
 .cards > .cards__item {
   margin-right: 18px;
   position: relative;
-  width: 176px;
+  width: 175px; 
   font-size: 12px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .cards > .cards__item:last-child {
@@ -79,14 +82,12 @@ body {
 
 .cards > .cards__item > .cards__item_image {
   width: 100%;
+  border-radius: 9px;
+  margin-bottom: 9px;
 }
 
 .cards > .cards__item > .cards__item_reviews {
   padding-bottom: 8px;
-}
-
-.cards > .cards__item > .cards__item_reviews > .star {
-
 }
 
 .cards > .cards__item > .cards__item_reviews > span {
